@@ -1,9 +1,15 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
 :root {
     font-family: 'Roboto', sans-serif;
 }
 
+/*************************************************
+    MACRO-CONTAINER STYLES
+ *************************************************/
 .wrapper-up {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
     background-color: blue;
     display: flex;
 }
@@ -20,7 +26,18 @@
     background-color: yellowgreen;
 }
 
-.controller {
-    height: 70px;
+.topbar {
+    height: 100px;
     background-color: grey;
+}
+
+/*************************************************
+
+ *************************************************/
+
+/*************************************************
+    BG-COLOR
+ *************************************************/
+.ms_bgcolor-lightgrey {
+    background-color: #f8f9fa;
 }
