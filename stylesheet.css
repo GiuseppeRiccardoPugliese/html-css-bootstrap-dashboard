@@ -1,0 +1,26 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-up {
+    height: calc(100vh - 70px);
+    background-color: blue;
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    height: 100%;
+    background-color: violet;
+}
+
+.main-content {
+    flex-grow: 1;
+    height: 100%;
+    background-color: yellowgreen;
+}
+
+.controller {
+    height: 70px;
+    background-color: grey;
+}
