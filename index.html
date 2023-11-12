@@ -25,34 +25,534 @@
 
 <body>
     <!-- Inizio TOPBAR in alto -->
-    <div class="topbar d-flex align-items-center ms_bgcolor-lightgrey">
+    <header class="topbar d-flex align-items-center ms_bgcolor-lightgrey">
         <div class="container-fluid bg-white">
             <div class="row align-items-center">
-                <div class="col-2">
-                    <img src="img/logo.svg" alt="">
+                <div class="col-2 col-lg-2 col-md-1 col-sm-1">
+                    <a class="navbar-brand m-0 d-none d-lg-block" href="#"> <!-- Left part Normal img-->
+                        <img src="img/logo.svg" alt="" width="150" height="50">
+                    </a>
+                    <a class="navbar-brand m-0 d-lg-none" href="#"> <!-- Left part Small img-->
+                        <img src="img/mobile-logo.png" alt="" width="50" class="bg-transparent" height="50">
+                    </a>
                 </div>
-                <div class="col-8"> <!-- Barra di ricerca -->
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i
+
+                <div class="col-9 col-lg-8 col-md-10 col-sm-10"> <!-- Mid part -->
+                    <div class="input-group">
+                        <span class="input-group-text ms_bgcolor-grey" id="basic-addon1"><i
                                 class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        <input type="text" class="form-control ms_bgcolor-grey border-start-0"
+                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <div class="col-2">
 
+                <div class="col-lg-1 d-none d-lg-block"> <!-- Right part -->
+                    <ul class="d-flex list-unstyled m-0 justify-content-around align-items-center">
+                        <li>
+                            <a class="text-dark" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1 col-lg-1 col-sm-1 col-1">
+                    <div class="dropdown">
+                        <a class="p-0 border-0 bg-white ms_color-orange" href="#" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="wrapper-up">
-        <div class="sidebar">
+    </header>
+    <!-- Inizio WRAPPER -->
+    <main class="wrapper-up">
+        <!-- Inizio SIDEBAR sulla sinistra -->
+        <section class="sidebar">
+            <div class="container-fluid">
+                <div class="row py-3"> <!-- Parte sopra della sidebar -->
+                    <div class="col-lg-4 col-12 d-flex justify-content-center">
+                        <ul class="list-unstyled text-center">
+                            <li>
+                                <a href="#"><i class="fa-solid fa-house text-white"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-chart-simple text-white"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-signal text-white"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-8">
+                        <ul class="list-unstyled d-none d-lg-block">
+                            <li>
+                                <a class="text-decoration-none" href="#"><span
+                                        class="text-white ms_fw-600">Home</span></a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none" href="#"><span
+                                        class="text-white ms_fw-600">Stats</span></a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none" href="#"><span
+                                        class="text-white ms_fw-600">Signals</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row"> <!-- Parte sotto della sidebar -->
+                    <div class="col-12 col-lg-4 d-flex justify-content-center">
+                        <a href="#"><i class="fa-solid fa-gear text-white"></i></a>
+                    </div>
+                    <div class="col-8 d-none d-lg-block">
+                        <a class="text-decoration-none" href="#"><span class="text-white ms_fw-600">Admin</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <!-- Inizio MAIN CONTENT -->
         <div class="main-content">
+            <section class="ms_bgcolor-blue"> <!-- Parte sopra in blue del main content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 py-2">
+                            <h2 class="text-white m-0 d-inline-block ms_fw-600">Boolean</h2>
+                            <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Piano blaze</span>
+                            <div class="row py-2">
+                                <div class="col-12">
+                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">
+                                        3 app</span>
+                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Boolean mobile
+                                        app</span>
+                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Boolean web
+                                        app</span>
+                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Boolean blog
+                                        app</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 py-2">
+                            <span class="text-white d-block fs-6">Studenti online negli ultimi 30 minuti</span>
+                            <span class="text-white fs-3 ms_fw-600">125</span>
+                        </div>
+                        <div class="col-3 py-2">
+                            <span class="text-white">Nuovo Studente</span>
+                            <i class="fa-solid fa-plus p-3 mx-1 border border-2 rounded-3" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            <!-- OFF CANVAS -->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="text" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="text" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <div class="input-group flex-nowrap">
+                                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                                    <input type="text" class="form-control" aria-label="Username"
+                                                        aria-describedby="addon-wrapping">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="text" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="text" class="form-label">Citt&agrave;</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="text" class="form-label">Stato</label>
+                                                <div class="input-group mb-3">
+                                                    <select class="form-select" id="inputGroupSelect02">
+                                                        <option selected>Scegli...</option>
+                                                        <option value="1">Uno</option>
+                                                        <option value="2">Due</option>
+                                                        <option value="3">Tre</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="mb-3">
+                                                    <label for="text" class="form-label">CAP</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="exampleInputEmail1" class="form-label">Foto</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Seleziona per
+                                                        proseguire</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section> <!-- Section Main Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8"> <!-- PARTE DI SINISTRA -->
+                            <div class="row m-2 border rounded-3"> <!-- PROSSIME CLASSI -->
+                                <div class="col-12 border-bottom ms_bgcolor-lightgrey"> <!-- Top "title" -->
+                                    <h3>Prossime classi</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h6>Nome</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <h6>Data inizio</h6>
+                                    </div>
+                                    <div class="col-1">
+                                        <h6>ROI</h6>
+                                    </div>
+                                    <div class="col-1">
+                                        <h6>Stato</h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <h6>Azioni</h6>
+                                    </div>
+                                    <hr class="ms-2">
+                                </div>
 
+                                <!-- Contenuto -->
+                                <div class="row">
+                                    <div class="col-6"> <!-- Prima riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 75</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>15 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Seconda riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 76</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>16 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Terza riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 77</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>17 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button"
+                                            class="btn btn-warning text-white py-0 px-1 ms_fs-10">process</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Quarta riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 78</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>18 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Quinta riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 79</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>19 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-danger py-0 px-1 ms_fs-10">failed</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Sesta riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 80</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>20 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Settima riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 81</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>21 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-danger py-0 px-1 ms_fs-10">failed</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+
+                                    <hr class="ms-2">
+
+                                    <div class="col-6"> <!-- Ottava riga -->
+                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                        <span class="ms_fs-14">Classe 82</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>22 Feb 2021</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                    </div>
+                                    <hr class="ms-2">
+                                </div>
+                            </div>
+
+                            <div class="row m-2 border rounded-3"> <!-- FAQ -->
+                                <div class="col-12 border-bottom">
+                                    <h4>F.A.Q.</h4>
+                                </div>
+                                <ul class="list-group list-group-flush ps-2">
+                                    <li class="list-group-item d-flex flex-column">
+                                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="ms_fs-15">Come aggiungere un nuovo studente?</span>
+                                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                                            </div>
+                                        </button>
+                                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-dark ms_fs-15" href="#">Clicca sul + in alto
+                                                        nella
+                                                        sezione blu.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-column">
+                                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="ms_fs-15">Come posso accedere alle informazioni del mio
+                                                    account?</span>
+                                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                                            </div>
+                                        </button>
+                                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-dark ms_fs-15" href="#">Clicca sull'icona
+                                                        della
+                                                        campanella.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-column">
+                                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="ms_fs-15">Posso usare questa dashboard da mobile?</span>
+                                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                                            </div>
+                                        </button>
+                                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-dark ms_fs-15" href="#">Provaci!!</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4"> <!-- PARTE DI DESTRA -->
+                            <div class="row m-2 border rounded-3"> <!-- TODO -->
+                                <div class="col-12 ms_bgcolor-lightgrey border-bottom">
+                                    <h4>Todo</h4>
+                                </div>
+                                <div class="list-group p-2">
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Kickoff nuove classi
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Lezione su Bootstrap 5 in classe #75
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Controllare username github studenti
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row m-2 border rounded-3"> <!-- STATS -->
+                                <div class="col-12 py-3">
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-bottom-0">
+                                            <img class="img-fluid" src="img/stats.jpeg" alt="">
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Utenti attivi</h5>
+                                            <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                        </li>
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                        <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
+    </main>
 
 
     <!-- JS INCLUDE -->
