@@ -81,44 +81,46 @@
     <main class="wrapper-up">
         <!-- Inizio SIDEBAR sulla sinistra -->
         <section class="sidebar">
-            <div class="container-fluid">
-                <div class="row py-3"> <!-- Parte sopra della sidebar -->
-                    <div class="col-lg-4 col-12 d-flex justify-content-center">
-                        <ul class="list-unstyled text-center">
-                            <li>
-                                <a href="#"><i class="fa-solid fa-house text-white"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-solid fa-chart-simple text-white"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-solid fa-signal text-white"></i></a>
-                            </li>
-                        </ul>
+            <div class="container-fluid h-100">
+                <div class="d-flex h-100 flex-wrap">
+                    <div class="row mx-auto py-3"> <!-- Parte sopra della sidebar -->
+                        <div class="col-lg-4 col-12 d-flex justify-content-center">
+                            <ul class="list-unstyled text-center">
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-house text-white"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-chart-simple text-white"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-signal text-white"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-8">
+                            <ul class="list-unstyled d-none d-lg-block">
+                                <li>
+                                    <a class="text-decoration-none" href="#"><span
+                                            class="text-white ms_fw-600">Home</span></a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none" href="#"><span
+                                            class="text-white ms_fw-600">Stats</span></a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none" href="#"><span
+                                            class="text-white ms_fw-600">Signals</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <ul class="list-unstyled d-none d-lg-block">
-                            <li>
-                                <a class="text-decoration-none" href="#"><span
-                                        class="text-white ms_fw-600">Home</span></a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none" href="#"><span
-                                        class="text-white ms_fw-600">Stats</span></a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none" href="#"><span
-                                        class="text-white ms_fw-600">Signals</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row"> <!-- Parte sotto della sidebar -->
-                    <div class="col-12 col-lg-4 d-flex justify-content-center">
-                        <a href="#"><i class="fa-solid fa-gear text-white"></i></a>
-                    </div>
-                    <div class="col-8 d-none d-lg-block">
-                        <a class="text-decoration-none" href="#"><span class="text-white ms_fw-600">Admin</span></a>
+                    <div class="row py-3 mx-auto align-self-end"> <!-- Parte sotto della sidebar -->
+                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                            <a href="#"><i class="fa-solid fa-gear text-white"></i></a>
+                        </div>
+                        <div class="col-8 d-none d-lg-block">
+                            <a class="text-decoration-none" href="#"><span class="text-white ms_fw-600">Admin</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,28 +130,56 @@
         <div class="main-content">
             <section class="ms_bgcolor-blue"> <!-- Parte sopra in blue del main content -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col-6 py-2">
-                            <h2 class="text-white m-0 d-inline-block ms_fw-600">Boolean</h2>
-                            <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Piano blaze</span>
-                            <div class="row py-2">
-                                <div class="col-12">
-                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">
-                                        3 app</span>
-                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Boolean mobile
-                                        app</span>
-                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Boolean web
-                                        app</span>
-                                    <span class="px-2 py-1 rounded-pill ms_bgcolor-lightblue text-white">Boolean blog
-                                        app</span>
-                                </div>
-                            </div>
+                    <div class="row flex-lg-row flex-md-row flex-column-reverse">
+                        <div class="col-lg-6 col-md-4 col-12 py-2 order-2">
+                            <nav aria-label="breadcrumb"> <!-- Parte di sinistra con le breadcrumb -->
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item text-white">
+                                        <h2 class="m-0 d-inline-block ms_fw-600"><a
+                                                class="text-white text-decoration-none" href="#">Boolean</a></h2>
+                                    </li>
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0 ms-2"
+                                        aria-current="page">
+                                        <span class="badge rounded-pill ms_bgcolor-lightblue">Piano blaze</span>
+                                    </li>
+                                </ol>
+                            </nav>
+
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0"
+                                        aria-current="page">
+                                        <span class="badge rounded-pill ms_bgcolor-lightblue">3 app</span>
+                                    </li>
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0 ms-2">
+                                        <span><i class="fa-solid fa-angles-right"></i></span>
+                                    </li>
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0 ms-2 d-lg-none"
+                                        aria-current="page">
+                                        <span class="badge rounded-pill ms_bgcolor-lightblue"><i
+                                                class="fa-solid fa-plus"></i></span>
+                                    </li>
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0 ms-2 d-none d-lg-inline"
+                                        aria-current="page">
+                                        <span class="badge rounded-pill ms_bgcolor-lightblue">Boolean mobile app</span>
+                                    </li>
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0 ms-2 d-none d-lg-inline"
+                                        aria-current="page">
+                                        <span class="badge rounded-pill ms_bgcolor-lightblue">Boolean web app</span>
+                                    </li>
+                                    <li class="breadcrumb active text-white d-flex align-items-end m-0 ms-2 d-none d-lg-inline"
+                                        aria-current="page">
+                                        <span class="badge rounded-pill ms_bgcolor-lightblue">Boolean blog app</span>
+                                    </li>
+                                </ol>
+                            </nav>
                         </div>
-                        <div class="col-3 py-2">
+
+                        <div class="col-lg-3 col-md-4 col-12 py-2 order-md-2 order-1">
                             <span class="text-white d-block fs-6">Studenti online negli ultimi 30 minuti</span>
                             <span class="text-white fs-3 ms_fw-600">125</span>
                         </div>
-                        <div class="col-3 py-2">
+                        <div class="col-lg-3 col-md-4 col-12 py-2 order-md-3 order-3">
                             <span class="text-white">Nuovo Studente</span>
                             <i class="fa-solid fa-plus p-3 mx-1 border border-2 rounded-3" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
@@ -240,8 +270,10 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <button type="button" class="btn btn-primary">Salva</button>
-                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                                <button type="submit" value="submit"
+                                                    class="btn btn-primary">Salva</button>
+                                                <button type="reset" value="Reset"
+                                                    class="btn btn-warning">Svuota</button>
                                             </div>
                                         </div>
                                     </form>
@@ -254,201 +286,220 @@
             <section> <!-- Section Main Content -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-8"> <!-- PARTE DI SINISTRA -->
+                        <div class="col-12 col-lg-8 ps-0"> <!-- PARTE DI SINISTRA -->
                             <div class="row m-2 border rounded-3"> <!-- PROSSIME CLASSI -->
-                                <div class="col-12 border-bottom ms_bgcolor-lightgrey"> <!-- Top "title" -->
+                                <div class="col-12 border-bottom ms_bgcolor-lightgrey pb-2"> <!-- Top "title" -->
                                     <h3>Prossime classi</h3>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6>Nome</h6>
+                                <div class="row pt-3">
+                                    <div class="col-4 col-lg-6">
+                                        <div class="d-flex align-items-end h-100">
+                                            <h6 class="m-0">Nome</h6>
+                                        </div>
                                     </div>
-                                    <div class="col-2">
-                                        <h6>Data inizio</h6>
+                                    <div class="col-lg-2 d-none d-lg-block">
+                                        <div class="d-flex align-items-end justify-content-center h-100">
+                                            <h6 class="m-0">Data inizio</h6>
+                                        </div>
                                     </div>
-                                    <div class="col-1">
-                                        <h6>ROI</h6>
+                                    <div class="col-lg-1 d-none d-lg-block">
+                                        <div class="d-flex align-items-end justify-content-center h-100">
+                                            <h6 class="m-0">ROI</h6>
+                                        </div>
                                     </div>
-                                    <div class="col-1">
-                                        <h6>Stato</h6>
+                                    <div class="col-4 col-lg-1">
+                                        <div class="d-flex align-items-end justify-content-center h-100">
+                                            <h6 class="m-0">Stato</h6>
+                                        </div>
                                     </div>
-                                    <div class="col-2">
-                                        <h6>Azioni</h6>
+                                    <div class="col-4 col-lg-2">
+                                        <div class="d-flex align-items-end justify-content-center h-100">
+                                            <h6 class="m-0">Azioni</h6>
+                                        </div>
                                     </div>
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
                                 </div>
 
                                 <!-- Contenuto -->
                                 <div class="row">
-                                    <div class="col-6"> <!-- Prima riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-4 col-lg-6 d-flex align-items-center"> <!-- Prima riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 75</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>15 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    <div class="col-4 col-lg-1 text-center">
+                                        <!-- <button type="button" class="btn btn-success py-0 px-1 ms_fs-10"><span
+                                                class="d-flex align-items-center">Done</span></button> -->
+                                        <span class="badge bg-success ms_fs-10 pb-1 rounded-3">Done</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-4 col-lg-2 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Seconda riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Seconda riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 76</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>16 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    <div class="col-lg-1 col-4 text-center">
+                                        <span class="badge bg-success ms_fs-10 pb-1 rounded-3">Done</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 col-4 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Terza riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Terza riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 77</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>17 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button"
-                                            class="btn btn-warning text-white py-0 px-1 ms_fs-10">process</button>
+                                    <div class="col-4 col-lg-1 text-center">
+                                        <span class="badge bg-warning ms_fs-10 pb-1 rounded-3">process</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-4 col-lg-2 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Quarta riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Quarta riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 78</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>18 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    <div class="col-4 col-lg-1 text-center">
+                                        <span class="badge bg-success ms_fs-10 pb-1 rounded-3">Done</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-4 col-lg-2 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Quinta riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Quinta riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 79</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>19 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-danger py-0 px-1 ms_fs-10">failed</button>
+                                    <div class="col-4 col-lg-1 text-center">
+                                        <span class="badge bg-danger ms_fs-10 pb-1 rounded-3">failed</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-4 col-lg-2 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Sesta riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Sesta riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 80</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>20 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    <div class="col-lg-1 col-4 text-center">
+                                        <span class="badge bg-success ms_fs-10 pb-1 rounded-3">Done</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-4 col-lg-2 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Settima riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Settima riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 81</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>21 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-danger py-0 px-1 ms_fs-10">failed</button>
+                                    <div class="col-lg-1 col-4 text-center">
+                                        <span class="badge bg-danger ms_fs-10 pb-1 rounded-3">failed</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 col-4 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
 
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert">
 
-                                    <div class="col-6"> <!-- Ottava riga -->
-                                        <img class="ms_avatarimg" src="img/class-avatar.jpg" alt="">
+                                    <div class="col-lg-6 col-4 d-flex align-items-center"> <!-- Ottava riga -->
+                                        <img class="ms_avatarimg me-1" src="img/class-avatar.jpg" alt="">
                                         <span class="ms_fs-14">Classe 82</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-lg-2 text-center d-none d-lg-block">
                                         <span>22 Feb 2021</span>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-lg-1 text-center d-none d-lg-block">
                                         <span>20%</span>
                                     </div>
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-success py-0 px-1 ms_fs-10">Done</button>
+                                    <div class="col-4 col-lg-1 text-center">
+                                        <span class="badge bg-success ms_fs-10 pb-1 rounded-3">Done</span>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-4 col-lg-2 text-center">
                                         <a href="#"><i class="fa-solid fa-pen ms_spaced-icon rounded-3"></i></a>
-                                        <a href="#"><i class="fa-solid fa-bucket ms_spaced-icon rounded-3"></i></a>
+                                        <a href="#"><i class="fa-solid fa-trash ms_spaced-icon rounded-3"></i>
+                                        </a>
                                     </div>
-                                    <hr class="ms-2">
+                                    <hr class="ms-2 ms_margin-revert mb-4">
                                 </div>
                             </div>
 
                             <div class="row m-2 border rounded-3"> <!-- FAQ -->
-                                <div class="col-12 border-bottom">
+                                <div class="col-12 border-bottom ms_bgcolor-lightgrey pb-2">
                                     <h4>F.A.Q.</h4>
                                 </div>
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
                                     <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
+                                        <h2 class="accordion-header mt-1" id="flush-headingOne">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                                 aria-expanded="false" aria-controls="flush-collapseOne">
@@ -492,9 +543,9 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-4"> <!-- PARTE DI DESTRA -->
+                        <div class="col-12 col-lg-4 ps-0"> <!-- PARTE DI DESTRA -->
                             <div class="row m-2 border rounded-3"> <!-- TODO -->
-                                <div class="col-12 ms_bgcolor-lightgrey border-bottom">
+                                <div class="col-12 ms_bgcolor-lightgrey border-bottom pb-2">
                                     <h4>Todo</h4>
                                 </div>
                                 <div class="list-group p-2">
