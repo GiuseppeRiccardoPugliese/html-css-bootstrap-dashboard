@@ -113,13 +113,8 @@
 /*************************************************
     HOVER SIDE-BAR
  *************************************************/
-.sidebar span:hover {
+.ms_sidebar-hover:hover {
     background-color: #e5e5e5;
-    transition: all 0.5s;
-}
-
-.sidebar a:hover {
-    background-color: grey;
     transition: all 0.5s;
 }
 
@@ -132,12 +127,20 @@
     color: #7e868d;
 }
 
+.ms_width-30px {
+    width: 30px;
+}
+
 /*************************************************
     RESPONSIVE FIX TABLE +
  *************************************************/
 @media all and (max-width:991px) {
     .sidebar {
         width: 50px;
+    }
+
+    .sidebar a {
+        text-align: center;
     }
 
     .sidebar .row [class*="col-"] {
